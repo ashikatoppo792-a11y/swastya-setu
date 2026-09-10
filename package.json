@@ -9,7 +9,9 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "firebase:login": "firebase login",
+    "firebase:deploy": "npm run build && firebase deploy --only hosting"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
@@ -25,6 +27,7 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
     "@vitejs/plugin-react": "^6.1.0",
+    "firebase-tools": "^15.30.0",
     "gh-pages": "^6.3.0",
     "oxlint": "^1.79.0",
     "typescript": "~6.0.2",
